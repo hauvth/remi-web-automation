@@ -10,8 +10,8 @@
     "test-ui": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 npx playwright test --ui",
     "gen-report": "allure generate allure-results --clean",
     "show-report": "allure open allure-report",
-    "report": "playwright show-report",
-    "clean": "rimraf test-results playwright-report allure-results allure-report",
+    "report-pw": "playwright show-report",
+    "clean-report": "rimraf test-results playwright-report allure-results allure-report",
     "lint": "eslint src --ext .ts"
   },
   "devDependencies": {

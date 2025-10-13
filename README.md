@@ -94,7 +94,7 @@ These values are loaded automatically using **dotenv** in your `config/constant.
 ### ▶️ Run all tests
 
 ```bash
-npx run test
+npm run test
 ```
 
 ### ▶️ Run a specific file
@@ -106,7 +106,7 @@ npx playwright test src/tests/login.spec.ts
 ### ▶️ Run with UI mode
 
 ```bash
-npx run test-ui
+npm run test-ui
 ```
 
 ---
@@ -119,10 +119,28 @@ npx run test-ui
 npx allure generate ./allure-results --clean -o ./allure-report
 ```
 
+or
+
+```bash
+npm run gen-report
+```
+
 ### Open report
 
 ```bash
 npx allure open ./allure-report
+```
+
+or
+
+```bash
+npm run show-report
+```
+
+### Clean all reports
+
+```bash
+npm run clean-report
 ```
 
 ---
@@ -135,8 +153,8 @@ npx allure open ./allure-report
     "test-ui": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 npx playwright test --ui",
     "gen-report": "allure generate allure-results --clean",
     "show-report": "allure open allure-report",
-    "report": "playwright show-report",
-    "clean": "rimraf test-results playwright-report allure-results allure-report",
+    "report-pw": "playwright show-report",
+    "clean-report": "rimraf test-results playwright-report allure-results allure-report",
     "lint": "eslint src --ext .ts"
 }
 ```
