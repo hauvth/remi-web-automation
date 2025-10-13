@@ -144,17 +144,3 @@ npm run clean-report
 ```
 
 ---
-
-## 🧱 7. Useful npm Scripts
-
-```json
-"scripts": {
-    "test": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 npx playwright test",
-    "test-ui": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 npx playwright test --ui",
-    "gen-report": "allure generate allure-results --clean",
-    "show-report": "allure open allure-report",
-    "report-pw": "playwright show-report",
-    "clean-report": "rimraf test-results playwright-report allure-results allure-report",
-    "lint": "eslint src --ext .ts"
-}
-```
