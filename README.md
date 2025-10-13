@@ -4,12 +4,12 @@
 
 This project is an **end-to-end UI automation framework** built with:
 
-- 🎭 **Playwright** – modern cross-browser testing framework
-- 🧠 **TypeScript** – strong typing and clean OOP structure
-- 🧱 **Page Object Model (POM)** – scalable and maintainable test design
-- 📊 **Allure Report** – powerful and interactive reporting
-- ⚙️ **dotenv + cross-env** – easy environment configuration
-- 🧩 **Prettier + ESLint** – consistent code formatting and linting
+* 🎭 **Playwright** – modern cross-browser testing framework
+* 🧠 **TypeScript** – strong typing and clean OOP structure
+* 🧱 **Page Object Model (POM)** – scalable and maintainable test design
+* 📊 **Allure Report** – powerful and interactive reporting
+* ⚙️ **dotenv + cross-env** – easy environment configuration
+* 🧩 **Prettier + ESLint** – consistent code formatting and linting
 
 It automates complex UI flows such as login with email verification, popup handling, and dashboard validation on web applications like **Remitano**.
 
@@ -35,8 +35,8 @@ npm install -g allure-commandline --save-dev
 ## 📦 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-org>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/hauvth/remi-web-automation
+cd remi-web-automation
 ```
 
 ---
@@ -45,6 +45,13 @@ cd <your-repo>
 
 ```bash
 npm install
+```
+
+Install Playwright and browsers:
+
+```bash
+npm install -D @playwright/test
+npx playwright install
 ```
 
 ---
@@ -58,6 +65,39 @@ cp .env.example .env
 ```
 
 These values are loaded automatically using **dotenv** in your `config/constant.ts`.
+
+Or create manually with the following variables:
+
+```env
+TEST_EMAIL=youremail@gmail.com
+TEST_PASSWORD=your_app_password_here
+```
+
+### 3.1 Google IMAP & App Password (for automated email verification)
+
+> Follow these steps to enable IMAP access and create an App Password for the automation script. **Recommended:** use an account dedicated to testing.
+
+**Step-by-step:**
+
+1. **Enable 2-Step Verification** for the Google account you will use for tests:
+
+   * Go to `https://myaccount.google.com/security` -> "Signing in to Google" -> "2-Step Verification" and follow the instructions to turn it on.
+
+2. **Create an App Password** (required for IMAP access from scripts when using 2-Step Verification):
+
+   * After enabling 2-Step Verification, go to `https://myaccount.google.com/security` -> "Signing in to Google" -> "App passwords".
+   * Choose **Mail** as the app, and **Other (Custom name)** or the device you prefer (e.g., `playwright-tests`).
+   * Click **Generate** and copy the 16-character app password. This is the value you will use as `TEST_PASSWORD` in your `.env` file (or as a dedicated `IMAP_PASSWORD` variable).
+
+3. **Enable IMAP in Gmail settings** (web UI):
+
+   * Open Gmail in a browser -> Settings (gear) -> See all settings -> Forwarding and POP/IMAP -> In "IMAP access" choose **Enable IMAP** -> Save changes.
+
+4. **Troubleshooting**
+
+   * If you get authentication failures, ensure 2-Step Verification is **enabled** and you are using the **generated app password**, not your normal password.
+   * Make sure IMAP is enabled in Gmail settings and that your IMAP client connects to `imap.gmail.com:993` using SSL/TLS.
+   * If Google blocks sign-in attempts, check the account security email and the Google Account activity page to allow access.
 
 ---
 
