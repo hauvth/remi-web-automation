@@ -8,6 +8,9 @@ const config = {
     password: TEST_PASSWORD,
     host: 'imap.gmail.com',
     port: 993,
+    tlsOptions: {
+      rejectUnauthorized: false,
+    },
     tls: true,
     authTimeout: 30000,
   },
