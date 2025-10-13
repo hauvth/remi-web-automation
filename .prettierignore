@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+dist
+
+# playwright reports
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# test outputs
+test-results/
+allure-report/
+allure-results/
+
+# environment & build configs
+.env

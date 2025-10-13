@@ -1,0 +1,39 @@
+{
+  "name": "pw-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 npx playwright test",
+    "test-ui": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 npx playwright test --ui",
+    "gen-report": "allure generate allure-results --clean",
+    "show-report": "allure open allure-report",
+    "report": "playwright show-report",
+    "clean": "rimraf test-results playwright-report allure-results allure-report",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@playwright/test": "^1.50.1",
+    "@types/imap-simple": "^4.2.10",
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^22.13.1",
+    "allure-playwright": "^3.2.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "imap-simple": "^5.1.0",
+    "mailparser": "^3.7.5",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.46.0"
+  },
+  "dependencies": {
+    "prettier": "^3.4.2",
+    "winston": "^3.18.3"
+  }
+}
