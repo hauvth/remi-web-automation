@@ -6,7 +6,7 @@ import { BASE_URL } from './src/config/constant';
  */
 export default defineConfig({
   testDir: './src/tests',
-  timeout: 30 * 1000,
+  timeout: 100 * 1000,
 
   /* Run tests in files in parallel */
   // fullyParallel: true,

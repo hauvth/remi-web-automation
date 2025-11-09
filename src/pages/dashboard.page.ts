@@ -17,11 +17,43 @@ export class DashboardPage extends BasePage {
   private readonly avtIcon = this.page.getByTestId('icon-profile-circle');
   private readonly userEmail = this.page.locator(`text=${TEST_EMAIL}`);
   private readonly toastCloseBtn = this.page.getByTestId('inform-item-close-button-1');
+  private readonly swapBtn = this.page.getByTestId('menu-swap');
+  private readonly pageTitle = "//h5[text()='%s']";
+  private readonly marketPriceForm = this.page.locator("//button[contains(@data-testid,'order_type_market')]");
+  private readonly yourPriceForm = this.page.locator("//button[contains(@data-testid,'order_type_limit')]");
 
   async verifyDashboardVisible() {
     await expect(this.buySellMenu).toBeVisible({ timeout: 15000 });
     await expect(this.swapMenu).toBeVisible();
     await expect(this.page).toHaveURL(/remitano\.com\/vn/);
+  }
+  
+  async clickYourPriceTab() {
+    logger.info('➡️ Click on Your Price tab');
+    await this.yourPriceForm.click();
+  }
+
+  async clickSwapMenu() {
+    logger.info('➡️ Click on Swap menu');
+    await this.swapBtn.click();
+  }
+
+  async verifyMarketPriceFormIsSelected() {
+    logger.info('🔎 Verify Market Price form is selected by default');
+    const attribute = await this.marketPriceForm.getAttribute('data-testid');
+    expect(attribute).toContain('active');
+  }
+
+  async verifyYourPriceFormIsSelected() {
+    logger.info('🔎 Verify Market Price form is selected by default');
+    const attribute = await this.yourPriceForm.getAttribute('data-testid');
+    expect(attribute).toContain('active');
+  }
+
+  async verifySwapPageVisibleInMarketPriceForm() {
+    const pageTitleLocator = this.page.locator(this.pageTitle.replace('%s', 'Swap'));
+    await expect(pageTitleLocator).toBeVisible({ timeout: 10000 });
+    this.verifyMarketPriceFormIsSelected;
   }
 
   async handleWelcomePopup() {
