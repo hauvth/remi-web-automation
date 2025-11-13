@@ -22,7 +22,7 @@ export default defineConfig({
   use: {
     headless: false,
     screenshot: 'only-on-failure',
-    video: 'on',
+    video: 'retain-on-failure',
     trace: 'on-first-retry',
     ignoreHTTPSErrors: true,
     baseURL: BASE_URL || 'http:/localhost:3000',
@@ -38,7 +38,7 @@ export default defineConfig({
         viewport: null,
         deviceScaleFactor: undefined,
         launchOptions: {
-          args: ['--start-maximized', '--ignore-certificate-errors'],
+          args: ['--window-size=1920,1080', '--ignore-certificate-errors'],
         },
       },
     },

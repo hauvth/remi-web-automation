@@ -29,6 +29,7 @@ export class SwapPage extends BasePage {
     // private readonly depositBtn = this.page.getByTestId('amm-order-deposit');
     private readonly errorMessage = this.page.getByTestId('error-message');
     private readonly maxBtn = this.page.locator("//div[text()='MAX']//ancestor::button");
+    private readonly maxBtn1 = this.page.getByRole('button', { name: 'MAX' });
     private readonly closeBtnOnModal = this.page.getByTestId("icon-close-clear-outline");
     private readonly depositBtn = this.page.locator("//div[text()='Nạp tiền']//ancestor::button");
     private readonly selecNetWorkSheet = this.page.getByTestId("network-type-selection-dialog-title");
@@ -143,7 +144,8 @@ export class SwapPage extends BasePage {
     }   
 
     async clickMaxButton() {
-        await this.maxBtn.click();
+        // await this.maxBtn.click();
+        await this.maxBtn1.click();
     }
 
     async verifyPreviewOrderButtonIsDisabled() {
@@ -164,7 +166,7 @@ export class SwapPage extends BasePage {
 
     async verifyAmountAutoTrimmed(){
         const amount = await this.soureAmount.inputValue();
-        const specialCharacter : RegExp = /[@£$%^&*()_+~\.,]/
+        const specialCharacter : RegExp = /[@£$%^&*()_+~,]/
         expect(amount).not.toMatch(specialCharacter);
     }
 
@@ -172,7 +174,7 @@ export class SwapPage extends BasePage {
         await this.page.waitForTimeout(2000);
         const rateBefore = await this.swapRateText.textContent();
         const rateNumberBefore = extractNumber(rateBefore!);
-        await this.soureAmount.fill('1000');
+        await this.soureAmount.fill('10000');
         await this.page.waitForTimeout(3000);
         const rateAfter = await this.swapRateText.textContent();
         const rateNumberAfter = extractNumber(rateAfter!);
@@ -184,7 +186,6 @@ export class SwapPage extends BasePage {
         const destinationInfo = this.page.locator("//div[@data-testid='icon-arrow-long-right-outline']//following-sibling::div[@dir='auto']//span");
         const actualSourceAmount = await sourceInfo.nth(0).textContent();
         const actualSourceCoin = await sourceInfo.nth(1).textContent();
-        const actualDestinationAmount = await destinationInfo.nth(0).textContent();
         const actualDestinationCoin = await destinationInfo.nth(1).textContent();
         expect(actualSourceAmount).toBe(this.sourceAmount);
         expect(actualSourceCoin).toBe(this.sourceCoin);

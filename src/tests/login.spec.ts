@@ -4,7 +4,7 @@ import { TEST_EMAIL } from '../config/constant';
 import { DashboardPage } from '../pages/dashboard.page';
 
 test.describe('Remitano Login Flow', () => {
-  test('Login successfully and reach dashboard', async ({page, loginPage, context }) => {
+  test('Login successfully and reach dashboard', async ({loginPage, context }) => {
     // 1️⃣ Mở trang home & login bằng email
     await loginPage.openHome();
     await loginPage.loginWithEmail(TEST_EMAIL);

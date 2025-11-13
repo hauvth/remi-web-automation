@@ -12,7 +12,7 @@ export class LoginPage extends BasePage {
   private readonly sentMailNotice = this.page.locator('text=Xác nhận yêu cầu đăng nhập của bạn');
 
   async openHome() {
-    await this.page.goto(BASE_URL || 'http://localhost:3000');
+    await this.page.goto(BASE_URL || 'http://localhost:3000',{waitUntil:"domcontentloaded", timeout:60000});
     await expect(this.page).toHaveTitle(/Remitano/);
   }
 
