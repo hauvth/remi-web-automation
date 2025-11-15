@@ -32,6 +32,11 @@ test.describe('Remitano Swap At Market Price Tab', async() => {
         await swapPage.enterSourceAmount('0.01');
         await swapPage.verifyErrorMessageIsDisplayed(CONTANSTS.WARNING_AMOUNT);
         await swapPage.verifyAmountCaculatedAutomatically();
+        await swapPage.selectSourceCoinFromSelect('ETH');
+        await swapPage.selectDestinationCoinFromSelect('USDT');
+        await swapPage.enterSourceAmount('0.00001');
+        await swapPage.verifyErrorMessageIsDisplayedWhenSourceCoinIsNotUSDT(CONTANSTS.WARNING_AMOUNT);
+        
     });
 
     test('User Input Special Characters in Amount Field', async ({loginPage,swapPage, dashboardPage }) => {
@@ -120,6 +125,11 @@ test.describe('Remitano Swap At Your Price Tab - Logged-out users', async() => {
         await swapPage.enterSourceAmount('0.01');
         await swapPage.verifyErrorMessageIsDisplayed(CONTANSTS.WARNING_AMOUNT);
         await swapPage.verifyAmountCaculatedAutomatically();
+        await swapPage.selectSourceCoinFromSelect('ETH');
+        await swapPage.selectDestinationCoinFromSelect('USDT');
+        await swapPage.enterSourceAmount('0.00001');
+        await swapPage.verifyErrorMessageIsDisplayedWhenSourceCoinIsNotUSDT(CONTANSTS.WARNING_AMOUNT);
+        
     });
 
     test('User Input Special Characters in Amount Field - Your Price', async ({loginPage,swapPage, dashboardPage }) => {

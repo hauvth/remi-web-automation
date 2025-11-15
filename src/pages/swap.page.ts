@@ -26,9 +26,8 @@ export class SwapPage extends BasePage {
     private readonly previewOrderBtn = this.page.getByTestId('btn-submit-swap');
     private readonly moreDeatailsBtn = this.page.getByTestId('swap-more-info');
     private readonly limitPriceInput = this.page.getByTestId('limitPrice');
-    // private readonly depositBtn = this.page.getByTestId('amm-order-deposit');
     private readonly errorMessage = this.page.getByTestId('error-message');
-    private readonly maxBtn = this.page.locator("//div[text()='MAX']//ancestor::button");
+    private readonly maxBtn = this.page.getByRole("button",{name:"MAX"});
     private readonly closeBtnOnModal = this.page.getByTestId("icon-close-clear-outline");
     private readonly depositBtn = this.page.locator("//div[text()='Nạp tiền']//ancestor::button");
     private readonly selecNetWorkSheet = this.page.getByTestId("network-type-selection-dialog-title");
@@ -54,6 +53,12 @@ export class SwapPage extends BasePage {
 
     async selectDestinationCoinFromSelect(coinName: string) {
         await this.destinationCoinSelect.click();
+        await this.searchCoin(coinName);
+        await this.selectCoinFromSelect(coinName.toLowerCase());
+    }
+
+    async selectSourceCoinFromSelect(coinName: string) {
+        await this.sourceCoinSelect.click();
         await this.searchCoin(coinName);
         await this.selectCoinFromSelect(coinName.toLowerCase());
     }
@@ -126,7 +131,8 @@ export class SwapPage extends BasePage {
         return await this.soureAmount.inputValue() || '';
     }
     async getDestinationAmount() : Promise<string> {
-        return await this.destinationAmount.textContent() || '';
+        await this.page.waitForTimeout(3000);
+        return await this.destinationAmount.inputValue() || '';
     }   
 
     async clickPreviewOrderButton() {
@@ -151,14 +157,17 @@ export class SwapPage extends BasePage {
     }
 
     async verifyErrorMessageIsDisplayed(expectedMessage: string) {
+        await this.page.waitForTimeout(2000);
+        const sourceAmount :string = await this.getSourceAmount();
+        const expectedMess = expectedMessage.replace('%s', sourceAmount);
         await expect(this.errorMessage).toBeVisible({ timeout: 10000 });
         const actualMessage = await this.errorMessage.textContent();
-        expect(actualMessage).toBe(expectedMessage);
+        expect(actualMessage).toBe(expectedMess);
     }
 
     async verifyAmountCaculatedAutomatically(){
-        await this.page.waitForTimeout(3000);
-        const amount = await this.destinationAmount.textContent();
+        await this.page.waitForTimeout(2000);
+        const amount = await this.destinationAmount.inputValue();
         expect(amount).not.toBe('0.00');
     }
 
@@ -183,8 +192,7 @@ export class SwapPage extends BasePage {
         const sourceInfo = this.page.locator("//div[@data-testid='icon-arrow-long-right-outline']//preceding-sibling::div[@dir='auto']//span");
         const destinationInfo = this.page.locator("//div[@data-testid='icon-arrow-long-right-outline']//following-sibling::div[@dir='auto']//span");
         const actualSourceAmount = await sourceInfo.nth(0).textContent();
-        const actualSourceCoin = await sourceInfo.nth(1).textContent();
-        const actualDestinationAmount = await destinationInfo.nth(0).textContent();
+        const actualSourceCoin = await sourceInfo.nth(1).textContent();;
         const actualDestinationCoin = await destinationInfo.nth(1).textContent();
         expect(actualSourceAmount).toBe(this.sourceAmount);
         expect(actualSourceCoin).toBe(this.sourceCoin);
@@ -223,4 +231,13 @@ export class SwapPage extends BasePage {
         expect(actualTitle).toBe(CONTANSTS.SOURCE_COIN_SELECT_TITLE);
     }
 
+    async verifyErrorMessageIsDisplayedWhenSourceCoinIsNotUSDT(expectedMessage: string) {
+        const destinationAmount :string = await this.getDestinationAmount();
+        const expectedMess = expectedMessage.replace('%s', destinationAmount);
+        if(destinationAmount.localeCompare('0.1') < 0) {
+        await expect(this.errorMessage).toBeVisible({ timeout: 10000 });
+        const actualMessage = await this.errorMessage.textContent();
+        expect(actualMessage).toBe(expectedMess);
+        }
+    }
 }   
