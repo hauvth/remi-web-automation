@@ -255,7 +255,7 @@ export class SwapPage extends BasePage {
         const withPrice = await this.getWithPriceRate();
         const withPriceNumber = Number(withPrice.replace(",",""));
         expect(rateText).toBe(withPriceNumber);
-        await this.page.waitForTimeout(60000);
+        await this.page.waitForTimeout(30000);
         const newRateText = extractNumber(await this.getSwapRateText());
         const newWithPrice = await this.getWithPriceRate();
         const newPriceNumber = Number(newWithPrice.replace(",",""));
