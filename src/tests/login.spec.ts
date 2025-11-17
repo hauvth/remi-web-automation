@@ -17,7 +17,6 @@ test.describe('Remitano Login Flow', () => {
     const verifyPage = await context.newPage();
     await verifyPage.goto(verifyLink);
     await loginPage.close();
-
     const dashboardPage = new DashboardPage(verifyPage);
     // 4️⃣ Verify Dashboard
     await dashboardPage.handleWelcomePopup();

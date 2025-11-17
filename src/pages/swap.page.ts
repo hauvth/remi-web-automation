@@ -51,6 +51,10 @@ export class SwapPage extends BasePage {
         await coinLocator.click();
     }
 
+    async getSwapRateText() : Promise<string>{
+        return await this.swapRateText.textContent() || '';
+    }
+
     async selectDestinationCoinFromSelect(coinName: string) {
         await this.destinationCoinSelect.click();
         await this.searchCoin(coinName);
@@ -61,6 +65,10 @@ export class SwapPage extends BasePage {
         await this.sourceCoinSelect.click();
         await this.searchCoin(coinName);
         await this.selectCoinFromSelect(coinName.toLowerCase());
+    }
+
+    async getWithPriceRate(): Promise<string> {
+        return await this.limitPriceInput.inputValue()||'';
     }
 
     async verifyChartIsVisibleWithSelectedCoinPair() {
@@ -239,5 +247,18 @@ export class SwapPage extends BasePage {
         const actualMessage = await this.errorMessage.textContent();
         expect(actualMessage).toBe(expectedMess);
         }
+    }
+
+    async verifyWithPriceAutomaticallyDependingOnMarketPrice(){
+        await this.page.waitForTimeout(5000);
+        const rateText = extractNumber(await this.getSwapRateText());
+        const withPrice = await this.getWithPriceRate();
+        const withPriceNumber = Number(withPrice.replace(",",""));
+        expect(rateText).toBe(withPriceNumber);
+        await this.page.waitForTimeout(60000);
+        const newRateText = extractNumber(await this.getSwapRateText());
+        const newWithPrice = await this.getWithPriceRate();
+        const newPriceNumber = Number(newWithPrice.replace(",",""));
+        expect(newRateText).toBe(newPriceNumber);
     }
 }   

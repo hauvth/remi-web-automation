@@ -2,30 +2,30 @@
   "cookies": [
     {
       "name": "connect.sid",
-      "value": "s%3AIvx8Ho7lzK2zXvNAUX-WmgjG1mXI4uqh.ZytJOGYkge4dLakKMc0iOWgvJ%2B%2FDjxT6rgdjtQS8bt8",
+      "value": "s%3AIityDHbuM4jHeo0kPiCxcR_ihhzO3UDe.MAV2JervqVq%2FrXFoCL3qjgADHV5zsCcHQZyCMs5AsnU",
       "domain": "remitano.com",
       "path": "/",
-      "expires": 1763303478.514136,
+      "expires": 1763450928.323744,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_fbp",
-      "value": "fb.1.1763217071006.378726152693333837",
+      "value": "fb.1.1763364521815.356250427789723316",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1770993079,
+      "expires": 1771140530,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_gid",
-      "value": "GA1.2.1699943953.1763217071",
+      "value": "GA1.2.1149963545.1763364523",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1763303479,
+      "expires": 1763450930,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -35,67 +35,17 @@
       "value": "1",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1763217131,
+      "expires": 1763364582,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "muc_ads",
-      "value": "ed7b1422-06a9-4334-bd1c-da1e567e228c",
-      "domain": ".t.co",
-      "path": "/",
-      "expires": 1797777071.566347,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "guest_id_marketing",
-      "value": "v1%3A176321707264382296",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1797777071.670485,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "guest_id_ads",
-      "value": "v1%3A176321707264382296",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1797777071.670572,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "personalization_id",
-      "value": "\"v1_olVtwvZFQt+R06iknnQxNQ==\"",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1797777071.670595,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "guest_id",
-      "value": "v1%3A176321707264382296",
-      "domain": ".twitter.com",
-      "path": "/",
-      "expires": 1797777071.670616,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "cf_clearance",
-      "value": "x8Vy5UO8dvv7m6BZDKg_x4G4AtPQh_trIolklJdJVmU-1763217073-1.2.1.1-i66kJdCfqd_TcLz0rGbY73kKpQQaIHPJwYrzWrrzaSVH_KUMVqOfs3R_gyUkIZ6njlnrVs0vvF30onOdLQeXPwUhOf28NjBays0CutU._4qZjrI8qYMwpRvKlK7nOjIPluRvvCOp7BzjHpfS8sNK462A_EvFRGE9A9YhlxjGRnwwVbYHpV9Tm9L_kRGactVsywYR0JMOfCZpyUKu7cx14QmtkJk2RyE3scgukZWp2NE",
+      "value": "uf_w5VrN5n8O10Fu_D09dYiwnoO18PehtJq_cizScKM-1763364525-1.2.1.1-IH5VgDI_Qq3LfDbelcacOwTG7.nxUDorrcYYd9cCUBXSLndsl2BUz6KyFVeIAffMcXvp.vSp4hDvhvI8w70n.7Z6VHE80X6fDnCn9mECRktPlS12xt_9L4rIOg7zR8WgKs4UpCYw95.nDM6NDBGXVLcUZ4TI.wkP7duwR9rCfKrlyLuy_r7QtDa1lrffvHfAoczyUijp8Wqs9.hOPWH2kDsAo5hG3SyhSyZTZlF88wI",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1794753072.394512,
+      "expires": 1794900522.953715,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None",
@@ -103,11 +53,61 @@
       "_crHasCrossSiteAncestor": false
     },
     {
+      "name": "muc_ads",
+      "value": "92be307d-225a-4b6f-a827-9f276e4191aa",
+      "domain": ".t.co",
+      "path": "/",
+      "expires": 1797924523.085919,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "guest_id_marketing",
+      "value": "v1%3A176336452570536493",
+      "domain": ".twitter.com",
+      "path": "/",
+      "expires": 1797924523.095291,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "guest_id_ads",
+      "value": "v1%3A176336452570536493",
+      "domain": ".twitter.com",
+      "path": "/",
+      "expires": 1797924523.095363,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "personalization_id",
+      "value": "\"v1_/HAYM3QveVW/kQs5vsGbgQ==\"",
+      "domain": ".twitter.com",
+      "path": "/",
+      "expires": 1797924523.095378,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "guest_id",
+      "value": "v1%3A176336452570536493",
+      "domain": ".twitter.com",
+      "path": "/",
+      "expires": 1797924523.095392,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
       "name": "_gcl_au",
-      "value": "1.1.1741674588.1763217071",
+      "value": "1.1.1654628038.1763364522",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1770993071,
+      "expires": 1771140522,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -117,155 +117,135 @@
       "value": "1",
       "domain": ".www.google-analytics.com",
       "path": "/",
-      "expires": 1770993079.625988,
+      "expires": 1771140530.382392,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "g_state",
-      "value": "{\"i_l\":0,\"i_ll\":1763217073115,\"i_b\":\"J9bbYtEI5ETGYfLBvAPwgXT137zFbV4AMJ3vZUGfljg\"}",
+      "value": "{\"i_l\":0,\"i_ll\":1763364523769,\"i_b\":\"WMDvCgNX11FCPl3X/TStKjqGeGBNjHEVZomhkLdPcro\"}",
       "domain": "remitano.com",
       "path": "/",
-      "expires": 1778769073,
+      "expires": 1778916523,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "NID",
-      "value": "526=bRWr2WNZzlApZw_vQfValHaCEv2ZkZW0qfh16A5Sa9VcPYKt_rRp17uV5wxNnERAN4NVcgcPY5NMYxmfHVNYJv8j9JL8eyjC7WGvPNV9INV4KmWyLaln8I8OvOAuM_386AmAyL7BoOpO-blzoxkZNd1X1LYov2wxResHZgb2h7KSG1-umoFf0pqVVuJ2g3sp",
+      "value": "526=r_0wCDc_XgDE7ARC8_V_qR33r_5KRVAXz2gwbSbTvGDAnuTG6Kb-P7mGVt6HbwQ0316mkRTOtT5VqqVcl-1TLK0g7XCSQ5LRwIF8Lvx8WW0ztiq55XJip5Ltk5zeayN2jwxLIX3xKMsEeUofXorbRj4MnvFdIYPWd4SAAxFUnKB7DiZlGjpMQVJMY9SfHSGyBD4",
       "domain": ".google.com",
       "path": "/",
-      "expires": 1779028274.410082,
+      "expires": 1779175725.154959,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_ga",
-      "value": "GA1.2.248861322.1763217071",
+      "value": "GA1.2.2062381540.1763364522",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1797777079.755266,
+      "expires": 1797924530.547619,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_6BWMP7E90D",
-      "value": "GS2.2.s1763217072$o1$g1$t1763217079$j53$l0$h0",
+      "value": "GS2.2.s1763364523$o1$g1$t1763364530$j53$l0$h0",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1797777079.761075,
+      "expires": 1797924530.551787,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "AWSALB",
-      "value": "Oeu3XKD9u1ktHuhD/cAAt74f1X3MYpSx2Sjr6vMerKfPXABTv/n7y/86Bd4Akgjf6ZRlm5lHerg3A9nKcziP1FdUqmKOnkQFqv1ecmMRw23ep7ARCGeezuWRL1rN",
+      "value": "go3GOQGgbaUp+9yHgE2GC6DRGaIX6GC2WcuufRPuJV+udNgDlj88Ui3Hndxsn3j4iUSaM5Uu+XrpkvzT4ixQ/HZ82GYCzCFq+1RZFlLiprzPFWzIbPJdh3ChC3px",
       "domain": "socket.remitano.com",
       "path": "/",
-      "expires": 1763821879.055258,
+      "expires": 1763969330.897544,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "AWSALBCORS",
-      "value": "Oeu3XKD9u1ktHuhD/cAAt74f1X3MYpSx2Sjr6vMerKfPXABTv/n7y/86Bd4Akgjf6ZRlm5lHerg3A9nKcziP1FdUqmKOnkQFqv1ecmMRw23ep7ARCGeezuWRL1rN",
+      "value": "go3GOQGgbaUp+9yHgE2GC6DRGaIX6GC2WcuufRPuJV+udNgDlj88Ui3Hndxsn3j4iUSaM5Uu+XrpkvzT4ixQ/HZ82GYCzCFq+1RZFlLiprzPFWzIbPJdh3ChC3px",
       "domain": "socket.remitano.com",
       "path": "/",
-      "expires": 1763821879.055422,
+      "expires": 1763969330.897636,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_ga_QK1VQBS6EW",
-      "value": "GS2.1.s1763217071$o1$g1$t1763217080$j51$l0$h0",
+      "value": "GS2.1.s1763364521$o1$g1$t1763364530$j51$l0$h0",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1797777080.248313,
+      "expires": 1797924530.914725,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_S5HB1R177Y",
-      "value": "GS2.1.s1763217072$o1$g1$t1763217080$j52$l0$h0",
+      "value": "GS2.1.s1763364523$o1$g1$t1763364531$j52$l0$h0",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1797777080.264711,
+      "expires": 1797924531.04229,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_r_session",
-      "value": "b92d3c13ad9ead917878d748ee2fed67",
+      "value": "27fdc140bfb3a567098472d60dff6b45",
       "domain": "remitano.com",
       "path": "/",
-      "expires": 1765809080.480054,
+      "expires": 1765956531.21725,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "AWSALB",
-      "value": "2qBAyHFYd1a1Ka89EmRapfmzgy5zN/WvbnPGz69mihz7b+E09paI65njkPHC9jfROlRHucDHRLEt+OUUFl5a2g1vAcNF+RPY56z2LkxdZUAw1R4ATQ3FhI6fXSTQKFlJvGG1wgSJJj89lu1fpQvE8h6c6sgnk0Y8U3l/niPSMjyB2PeqtJNYfdZ2vGTBzw==",
+      "value": "A1+1VE+0z4OFr42d1dA3agAQI+ToBsNvlJYK3HBBSqgDXEXeWtaA/h3bMuq4tN4ir7B0hGMZjOAp5+xHH0FrDlBEz/L5JZ1bMZ8V990zligH4o1kLkdOXOc8Dq9Obw7+/x/a++a3e0yOAHvQ59AKEkQlTiSh69UgmNHqo1Na+Pm4NDG18Yx8VyamJlGnRw==",
       "domain": "remitano.com",
       "path": "/",
-      "expires": 1763821880.480004,
+      "expires": 1763969331.217127,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "AWSALBCORS",
-      "value": "2qBAyHFYd1a1Ka89EmRapfmzgy5zN/WvbnPGz69mihz7b+E09paI65njkPHC9jfROlRHucDHRLEt+OUUFl5a2g1vAcNF+RPY56z2LkxdZUAw1R4ATQ3FhI6fXSTQKFlJvGG1wgSJJj89lu1fpQvE8h6c6sgnk0Y8U3l/niPSMjyB2PeqtJNYfdZ2vGTBzw==",
+      "value": "A1+1VE+0z4OFr42d1dA3agAQI+ToBsNvlJYK3HBBSqgDXEXeWtaA/h3bMuq4tN4ir7B0hGMZjOAp5+xHH0FrDlBEz/L5JZ1bMZ8V990zligH4o1kLkdOXOc8Dq9Obw7+/x/a++a3e0yOAHvQ59AKEkQlTiSh69UgmNHqo1Na+Pm4NDG18Yx8VyamJlGnRw==",
       "domain": "remitano.com",
       "path": "/",
-      "expires": 1763821880.48003,
+      "expires": 1763969331.2172,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "__cf_bm",
-      "value": "ZK19jGNX8uZaX_Pk7LAzcfLLZeqx3L7M4a46gGN6z6U-1763217081-1.0.1.1-i7hFuWpfdMUdBZqZ4tewq0MKxZWoW6znMix7154TpO.mQ7pQ0CjsRDOmfU475hMWNy8uzpLOKX5HkOXAnOgaa_WQtDlQF7JTQrgYRuDqf8g",
+      "value": "L5Hm_IAcUJEbfwYILiw2UuKf.c8cMV4mOlR1izX31fQ-1763364533-1.0.1.1-ZIAlLVA9dM2kGt4cA4qwSkSJ_yFGglt7ULV3XwVFHfnGHjLj3pNsWw4D.mGUt4VCsR2NqPRF9wDQTAswUZq9iBua5_H04gZjYRkU_q5dGWU",
       "domain": ".remitano.com",
       "path": "/",
-      "expires": 1763218880.480079,
+      "expires": 1763366331.221513,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_cfuvid",
-      "value": "SOV0CVbfT4dGvjN5bw6Wbl3pfuZxr3ogpmSPvIbkLcw-1763217081533-0.0.1.1-604800000",
+      "value": "U4rJYzaJybH1m_cdiBTwWVwgHLwzqxeWH7mDr9ElY1Y-1763364533909-0.0.1.1-604800000",
       "domain": ".remitano.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "EZYB2fFii4LT6iXhKMZ.tHPDbWQHw7zJpPEn54itCVA-1763217081-1.0.1.1-_xoQIfCf_ex.UhffGz_zNRd1B63w_PB2soPIwLiFl7rjoXOY8ZUziZCwM.Fr.Q0suap.pW2FEl01xE9sCTieRZZtbA5DQefGhIpc7mOb67M",
-      "domain": ".remitano.net",
-      "path": "/",
-      "expires": 1763218880.493458,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_cfuvid",
-      "value": "v2B4x5sbPdVdv5844a7fV_TvviGl5zmoSQ5Y1bPP8pw-1763217081498-0.0.1.1-604800000",
-      "domain": ".remitano.net",
       "path": "/",
       "expires": -1,
       "httpOnly": true,
@@ -283,15 +263,15 @@
         },
         {
           "name": "gleap-widget-session-oIDOAEbaTYtLYUHb7ndxl2inGgBzM1i8",
-          "value": "{\"gleapId\":\"78dadc32-7470-4332-8c37-b22aeb283b20\",\"gleapHash\":\"6ad2a4f684eeabdababa451d40cd2c5a14dc44eee22f25b6882c4fcc81fc917d\",\"name\":\"hauvothanh12\",\"email\":\"hauvothanh12@gmail.com\",\"userId\":\"8470354\",\"value\":0,\"lang\":\"vi\",\"customData\":{\"user_hash\":\"30f3083331040d902ce79079dc0c462cc11245f5faeca4cc7ac1cd484658812b\",\"phone_number_status\":\"empty\",\"created_at\":\"2025-10-06 23:51:06 +0700\",\"doc_status\":\"empty\",\"doc_country\":\"vn\",\"country_code\":\"vn\",\"active_trades_count\":0,\"partners_traded\":0,\"trades_released\":0,\"authenticator_enabled\":false,\"mlm_enabled\":false,\"mlm_certificated\":false,\"renec_miner\":false,\"language_override\":\"vi\",\"locale\":\"vi\",\"trusted_banker\":false,\"totu_achieved\":false,\"referral_source\":\"referral_link\",\"is_cloned\":true,\"coinlympia\":false,\"total_on_off_ramp_volume_in_usdt\":3.6111496442,\"not_complete_lae_course\":false,\"offramp_status\":\"\",\"subscribe_emails\":\"\",\"country\":\"vn\",\"userHash\":\"30f3083331040d902ce79079dc0c462cc11245f5faeca4cc7ac1cd484658812b\",\"loyalty_level\":\"newbie\",\"first_trade_at\":\"2025/10/30 00:14:58 +0700\"},\"id\":\"68e3f4d17dd6722e63f1fbb2\"}"
+          "value": "{\"gleapId\":\"457c16ba-1123-4802-8bd9-b0c0a47bfd6d\",\"gleapHash\":\"b86df05ae5544431dfa7e349b811e7494943fe058d28b039952f0b2187f8f264\",\"value\":0,\"lang\":\"vi\",\"id\":\"691aceb5cdccfde642dcd92d\"}"
         },
         {
           "name": "last_start_app_time_ms",
-          "value": "1763217079160"
+          "value": "1763364529968"
         },
         {
           "name": "topicsLastReferenceTime",
-          "value": "1763217079764"
+          "value": "1763364530555"
         },
         {
           "name": "gleap-widget-unread-notifications",
@@ -299,7 +279,7 @@
         },
         {
           "name": "_gcl_ls",
-          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"creationTimeMs\":1763217070932},\"expires\":1770993070932}}"
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"creationTimeMs\":1763364521745},\"expires\":1771140521745}}"
         },
         {
           "name": "gleap-widget-config-oIDOAEbaTYtLYUHb7ndxl2inGgBzM1i8-vi",
@@ -311,7 +291,7 @@
         },
         {
           "name": "lastExternalReferrerTime",
-          "value": "1763217079265"
+          "value": "1763364530068"
         },
         {
           "name": "CURRENT_SWAP_PAGE_STATE_LOCAL_STORAGE_KEY",
@@ -327,7 +307,7 @@
         },
         {
           "name": "jStorage",
-          "value": "{\"__jstorage_meta\":{\"CRC32\":{\"device_uuid\":\"2.1338071883\",\"flash.messages\":\"2.685400961\",\"loggedIn\":\"2.2842925394\",\"user\":\"2.3774152206\",\"username\":\"2.402923321\",\"account:vnd\":\"2.467743050\",\"pendingNotificationCount\":\"2.3274496723\",\"account:btc\":\"2.3732235707\",\"coinAddressChannel:btc\":\"2.672358474\"},\"TTL\":{}},\"device_uuid\":\"5433cfa8-c81b-42ee-b570-aba93e3fec56\",\"flash.messages\":{},\"loggedIn\":true,\"user\":{\"id\":8470354,\"username\":\"hauvothanh12\",\"email\":\"hauvothanh12@gmail.com\",\"col_email\":\"hauvothanh12@gmail.com\",\"name\":\"\",\"real_name\":null,\"first_name\":null,\"country_code\":\"vn\",\"lang\":\"vi\",\"authenticator_enabled\":false,\"touch_id_enabled\":false,\"account_closeable\":false,\"created_at\":\"2025/10/06 23:51:06 +0700\",\"active_trades_count\":0,\"processing_transactions_count\":0,\"recent_payment_details\":{},\"doc_country\":\"vn\",\"doc_status\":\"empty\",\"basic_doc_status\":\"empty\",\"document_ref\":null,\"partners_traded\":0,\"trades_released\":0,\"last_active_trade\":null,\"referral_program\":\"give_away_by_stage_program\",\"partnerable\":true,\"seen_warnings\":{},\"merchant_secret\":null,\"temporary\":true,\"notifications_config\":{\"new_trade\":true,\"start_stop_investment\":true,\"show_balance_in_email\":true,\"trade_status\":true,\"trade_message\":true,\"phone_new_trade\":false,\"phone_trade_paid\":false,\"sms_trade_paid\":false,\"phone_price_change\":true,\"lending_high_apy\":false,\"daily_price\":true,\"receive_mail_release_renec\":false},\"phone_warn\":false,\"intercom_id\":8470354,\"intercom_hash\":\"fd6313edca358497c096bc1faa81d67dca4cc85794f2f8376f75818991a15047\",\"intercom_hashes\":{\"web\":\"fd6313edca358497c096bc1faa81d67dca4cc85794f2f8376f75818991a15047\",\"android\":\"cbe297104892ac297c917e04801209496b7a0424cbe5a2fc0ee82f7f003ac2af\",\"ios\":\"ac5199174486ce453ef7f2be7cd3f75778adcb6252a35f602b3d6e51feb7ae57\"},\"required_documents\":[[\"id\",\"image\",\"main\"],[\"liveness_detection_face\",\"video\",\"main\"]],\"role\":\"user\",\"api_key\":null,\"setting_token_hash\":\"3c9507eda134f0bc1779234e3222a69f\",\"daily_price\":true,\"test_version\":null,\"settings\":{},\"seeder\":false,\"level\":0,\"level_name\":\"0\",\"quota_kyc_level\":\"unverified\",\"maker_level\":null,\"peer_certify_status\":\"peer_certify_pending\",\"status\":\"active\",\"suspended_at\":null,\"phone_number_verified\":false,\"phone_number\":null,\"phone_number_status\":\"empty\",\"facebook_status\":\"empty\",\"twitter_status\":\"empty\",\"flag\":null,\"traded_volume\":0,\"daily_withdrawal_quota\":0,\"daily_withdrawal_quota_btc_lightning\":0,\"daily_deposit_quota_btc_lightning\":null,\"today_accumulative_withdrawal_amount\":0,\"today_accumulative_withdrawal_amount_btc_lightning\":0,\"today_accumulative_deposit_amount_btc_lightning\":null,\"mesh_banking_enabled\":false,\"mesh_banking_names\":[\"Techcombank\",\"Vietcombank\",\"MB\",\"VietinBank\",\"SeABank\",\"ACB\"],\"websocket_token\":\"eyJhbGciOiJSUzI1NiJ9.eyJ1c2VyX2lkIjo4NDcwMzU0LCJ0eXBlIjoid2Vic29ja2V0In0.OVqYnx4gTt2HLGfbF3W-ZBx4fS5wo0lBVed1HtR3YjJH2tNltHKYDUqWipQSJksr2JWKlQ8cu6Oulrx4foDREslQCd67DibDJb6EZO31eFqimYk6S8Zg_a1F4YW5kDxak8AYU0bUB6-uURVPbwOpKlxCR0D59LouNm70_gMWKbJU_XC6uhmqQQu6Lb_Uq8qAvJuMKzQXc5M33plMEPQW1FAQ0mr-xfYXglFBD68X-SXorNYnEeGnu8McFuIdrYGGWMAqssLFw6kHooBDoP494Wu_7IiZ9p9oEkbR-9NGA5LpBgPTnYcVJ_ODRQDhP9JGYCDC8P3KUGfnF-AO8t8wxw\",\"mlm_enabled\":false,\"is_merchant\":null,\"testing_features\":{\"ab_testing_variant\":\"A\",\"use_custom_document\":true},\"allowed_payment_gateway_features\":[\"pay\"],\"trading_countries\":[],\"referrer_username\":null,\"referrer_editable\":true,\"withdrawal_whitelist_setting_locked\":null,\"withdrawal_whitelist_delayed_disable_end_at_timestamp\":0,\"withdrawal_whitelist_enabled\":false,\"mlm_certificated\":null,\"async_kyc_eligible\":false,\"vpn\":false,\"vpn_access\":false,\"vpn_considered\":false,\"whitelist_vpn_ips\":null,\"deposit_using_virtual_account\":false,\"delayed_approval_operations\":[],\"coin_transfer_temporarily_disabled\":false,\"coin_transfer_temporarily_disabled_lifted_at_timestamp\":0,\"aml_applicable_level_name\":\"0\",\"remittance_readiness_confirmation_enabled\":true,\"twilio_registered\":null,\"trading_volume_display_mode\":\"visible\",\"referral_coin_gift\":null,\"default_referral_link\":{\"id\":33509637,\"code\":\"8470354\",\"referrer_receive\":40,\"referee_receive\":0},\"using_passbase_ekyc\":false,\"using_sumsub_ekyc\":false,\"using_liveness_detection\":false,\"using_remitano_ekyc\":true,\"using_bvn_doc\":false,\"using_fiat_withdrawal_separate_amount\":false,\"p2p_banking_enabled\":false,\"p2p_banking_names\":[\"Techcombank\",\"Vietcombank\",\"MB\",\"VietinBank\",\"SeABank\",\"ACB\"],\"last_passbase_verification_created_at\":null,\"trusted_banker\":false,\"banker_score\":0,\"p2p_locked_fund_leverage\":1,\"first_trade_at\":\"2025/10/30 00:14:58 +0700\",\"anti_phishing_code\":null,\"is_active_payment_gateway_payer\":null,\"totu_achieved\":false,\"investment_contest_enabled\":false,\"agreed_site_country_policies\":{},\"can_remind_friend_kyc\":true,\"can_buy_coin\":false,\"can_sell_coin\":true,\"total_on_off_ramp_volume_in_usdt\":3.6111496442,\"is_cloned\":true,\"max_amount_by_level_enabled\":true,\"agreed_latest_policy_before_trade\":false,\"is_in_blacklist\":false,\"is_churn_user\":false,\"web_app_reviewed\":false,\"banker_registration_status\":\"banker_registration_not_started\",\"kyc_result_sharing_status\":\"none\",\"carax_connect_wallet_address\":null,\"carax_unlock_external_address\":null,\"can_receive_renec_release\":null,\"main_banner_type\":\"small_trade_volume\",\"savi_linked\":false,\"doc_verified\":false,\"bank_verification_status\":\"pending\",\"offer_temporarily_disabled\":false,\"bank_verification_enabled\":true,\"is_first_sign_in\":false,\"is_new_user\":false,\"gleap_identity_hash\":\"30f3083331040d902ce79079dc0c462cc11245f5faeca4cc7ac1cd484658812b\",\"is_new_user_v4\":false,\"action_verifications\":[],\"temporary_balance_block_operations\":[],\"referred_by_referral_link\":null},\"username\":\"hauvothanh12\",\"account:vnd\":{\"id\":5404657,\"user_id\":8470354,\"balance\":0,\"available_balance\":0,\"frozen_balance\":0,\"type\":\"fiat\",\"currency\":\"vnd\",\"country_code\":\"vn\"},\"pendingNotificationCount\":88,\"account:btc\":{\"user_id\":8470354,\"coin_address_channel\":\"coin_address_channel_8470354\",\"balance\":0,\"frozen_balance\":0,\"available_balance\":0,\"available_withdrawable_balance\":0,\"type\":\"coin\",\"coin_currency\":\"btc\",\"currency\":\"btc\",\"address_with_type_arr\":[{\"type\":\"omni\",\"address\":\"3Dq7qs9dwNy8WpD5RA5PEkEno8f7nsjXYd\"},{\"type\":\"bep20\",\"address\":null},{\"type\":\"renec\",\"address\":null}],\"withdrawal_fee\":0.0005,\"coin_layer\":\"omni\",\"liability_amount\":0},\"coinAddressChannel:btc\":\"coin_address_channel_8470354\"}"
+          "value": "{\"__jstorage_meta\":{\"CRC32\":{\"device_uuid\":\"2.1758714608\",\"flash.messages\":\"2.685400961\",\"loggedIn\":\"2.2842925394\",\"user\":\"2.3774152206\",\"username\":\"2.402923321\",\"account:vnd\":\"2.467743050\",\"account:btc\":\"2.3732235707\",\"coinAddressChannel:btc\":\"2.672358474\",\"pendingNotificationCount\":\"2.4065944040\"},\"TTL\":{}},\"device_uuid\":\"9029a66a-8838-46b6-a4e3-4c42c9db1457\",\"flash.messages\":{},\"loggedIn\":true,\"user\":{\"id\":8470354,\"username\":\"hauvothanh12\",\"email\":\"hauvothanh12@gmail.com\",\"col_email\":\"hauvothanh12@gmail.com\",\"name\":\"\",\"real_name\":null,\"first_name\":null,\"country_code\":\"vn\",\"lang\":\"vi\",\"authenticator_enabled\":false,\"touch_id_enabled\":false,\"account_closeable\":false,\"created_at\":\"2025/10/06 23:51:06 +0700\",\"active_trades_count\":0,\"processing_transactions_count\":0,\"recent_payment_details\":{},\"doc_country\":\"vn\",\"doc_status\":\"empty\",\"basic_doc_status\":\"empty\",\"document_ref\":null,\"partners_traded\":0,\"trades_released\":0,\"last_active_trade\":null,\"referral_program\":\"give_away_by_stage_program\",\"partnerable\":true,\"seen_warnings\":{},\"merchant_secret\":null,\"temporary\":true,\"notifications_config\":{\"new_trade\":true,\"start_stop_investment\":true,\"show_balance_in_email\":true,\"trade_status\":true,\"trade_message\":true,\"phone_new_trade\":false,\"phone_trade_paid\":false,\"sms_trade_paid\":false,\"phone_price_change\":true,\"lending_high_apy\":false,\"daily_price\":true,\"receive_mail_release_renec\":false},\"phone_warn\":false,\"intercom_id\":8470354,\"intercom_hash\":\"fd6313edca358497c096bc1faa81d67dca4cc85794f2f8376f75818991a15047\",\"intercom_hashes\":{\"web\":\"fd6313edca358497c096bc1faa81d67dca4cc85794f2f8376f75818991a15047\",\"android\":\"cbe297104892ac297c917e04801209496b7a0424cbe5a2fc0ee82f7f003ac2af\",\"ios\":\"ac5199174486ce453ef7f2be7cd3f75778adcb6252a35f602b3d6e51feb7ae57\"},\"required_documents\":[[\"id\",\"image\",\"main\"],[\"liveness_detection_face\",\"video\",\"main\"]],\"role\":\"user\",\"api_key\":null,\"setting_token_hash\":\"3c9507eda134f0bc1779234e3222a69f\",\"daily_price\":true,\"test_version\":null,\"settings\":{},\"seeder\":false,\"level\":0,\"level_name\":\"0\",\"quota_kyc_level\":\"unverified\",\"maker_level\":null,\"peer_certify_status\":\"peer_certify_pending\",\"status\":\"active\",\"suspended_at\":null,\"phone_number_verified\":false,\"phone_number\":null,\"phone_number_status\":\"empty\",\"facebook_status\":\"empty\",\"twitter_status\":\"empty\",\"flag\":null,\"traded_volume\":0,\"daily_withdrawal_quota\":0,\"daily_withdrawal_quota_btc_lightning\":0,\"daily_deposit_quota_btc_lightning\":null,\"today_accumulative_withdrawal_amount\":0,\"today_accumulative_withdrawal_amount_btc_lightning\":0,\"today_accumulative_deposit_amount_btc_lightning\":null,\"mesh_banking_enabled\":false,\"mesh_banking_names\":[\"Techcombank\",\"Vietcombank\",\"MB\",\"VietinBank\",\"SeABank\",\"ACB\"],\"websocket_token\":\"eyJhbGciOiJSUzI1NiJ9.eyJ1c2VyX2lkIjo4NDcwMzU0LCJ0eXBlIjoid2Vic29ja2V0In0.OVqYnx4gTt2HLGfbF3W-ZBx4fS5wo0lBVed1HtR3YjJH2tNltHKYDUqWipQSJksr2JWKlQ8cu6Oulrx4foDREslQCd67DibDJb6EZO31eFqimYk6S8Zg_a1F4YW5kDxak8AYU0bUB6-uURVPbwOpKlxCR0D59LouNm70_gMWKbJU_XC6uhmqQQu6Lb_Uq8qAvJuMKzQXc5M33plMEPQW1FAQ0mr-xfYXglFBD68X-SXorNYnEeGnu8McFuIdrYGGWMAqssLFw6kHooBDoP494Wu_7IiZ9p9oEkbR-9NGA5LpBgPTnYcVJ_ODRQDhP9JGYCDC8P3KUGfnF-AO8t8wxw\",\"mlm_enabled\":false,\"is_merchant\":null,\"testing_features\":{\"ab_testing_variant\":\"A\",\"use_custom_document\":true},\"allowed_payment_gateway_features\":[\"pay\"],\"trading_countries\":[],\"referrer_username\":null,\"referrer_editable\":true,\"withdrawal_whitelist_setting_locked\":null,\"withdrawal_whitelist_delayed_disable_end_at_timestamp\":0,\"withdrawal_whitelist_enabled\":false,\"mlm_certificated\":null,\"async_kyc_eligible\":false,\"vpn\":false,\"vpn_access\":false,\"vpn_considered\":false,\"whitelist_vpn_ips\":null,\"deposit_using_virtual_account\":false,\"delayed_approval_operations\":[],\"coin_transfer_temporarily_disabled\":false,\"coin_transfer_temporarily_disabled_lifted_at_timestamp\":0,\"aml_applicable_level_name\":\"0\",\"remittance_readiness_confirmation_enabled\":true,\"twilio_registered\":null,\"trading_volume_display_mode\":\"visible\",\"referral_coin_gift\":null,\"default_referral_link\":{\"id\":33509637,\"code\":\"8470354\",\"referrer_receive\":40,\"referee_receive\":0},\"using_passbase_ekyc\":false,\"using_sumsub_ekyc\":false,\"using_liveness_detection\":false,\"using_remitano_ekyc\":true,\"using_bvn_doc\":false,\"using_fiat_withdrawal_separate_amount\":false,\"p2p_banking_enabled\":false,\"p2p_banking_names\":[\"Techcombank\",\"Vietcombank\",\"MB\",\"VietinBank\",\"SeABank\",\"ACB\"],\"last_passbase_verification_created_at\":null,\"trusted_banker\":false,\"banker_score\":0,\"p2p_locked_fund_leverage\":1,\"first_trade_at\":\"2025/10/30 00:14:58 +0700\",\"anti_phishing_code\":null,\"is_active_payment_gateway_payer\":null,\"totu_achieved\":false,\"investment_contest_enabled\":false,\"agreed_site_country_policies\":{},\"can_remind_friend_kyc\":true,\"can_buy_coin\":false,\"can_sell_coin\":true,\"total_on_off_ramp_volume_in_usdt\":3.6111496442,\"is_cloned\":true,\"max_amount_by_level_enabled\":true,\"agreed_latest_policy_before_trade\":false,\"is_in_blacklist\":false,\"is_churn_user\":false,\"web_app_reviewed\":false,\"banker_registration_status\":\"banker_registration_not_started\",\"kyc_result_sharing_status\":\"none\",\"carax_connect_wallet_address\":null,\"carax_unlock_external_address\":null,\"can_receive_renec_release\":null,\"main_banner_type\":\"small_trade_volume\",\"savi_linked\":false,\"doc_verified\":false,\"bank_verification_status\":\"pending\",\"offer_temporarily_disabled\":false,\"bank_verification_enabled\":true,\"is_first_sign_in\":false,\"is_new_user\":false,\"gleap_identity_hash\":\"30f3083331040d902ce79079dc0c462cc11245f5faeca4cc7ac1cd484658812b\",\"is_new_user_v4\":false,\"action_verifications\":[],\"temporary_balance_block_operations\":[],\"referred_by_referral_link\":null},\"username\":\"hauvothanh12\",\"account:vnd\":{\"id\":5404657,\"user_id\":8470354,\"balance\":0,\"available_balance\":0,\"frozen_balance\":0,\"type\":\"fiat\",\"currency\":\"vnd\",\"country_code\":\"vn\"},\"account:btc\":{\"user_id\":8470354,\"coin_address_channel\":\"coin_address_channel_8470354\",\"balance\":0,\"frozen_balance\":0,\"available_balance\":0,\"available_withdrawable_balance\":0,\"type\":\"coin\",\"coin_currency\":\"btc\",\"currency\":\"btc\",\"address_with_type_arr\":[{\"type\":\"omni\",\"address\":\"3Dq7qs9dwNy8WpD5RA5PEkEno8f7nsjXYd\"},{\"type\":\"bep20\",\"address\":null},{\"type\":\"renec\",\"address\":null}],\"withdrawal_fee\":0.0005,\"coin_layer\":\"omni\",\"liability_amount\":0},\"coinAddressChannel:btc\":\"coin_address_channel_8470354\",\"pendingNotificationCount\":136}"
         },
         {
           "name": "debug",
@@ -335,7 +315,7 @@
         },
         {
           "name": "jStorage_update",
-          "value": "1763217080484"
+          "value": "1763364531222"
         }
       ]
     }
