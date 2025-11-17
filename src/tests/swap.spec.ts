@@ -95,7 +95,7 @@ test.describe('Remitano Swap At Market Price Tab', async() => {
 });
 
 test.describe('Remitano Swap At Your Price Tab - Logged-out users', async() => {
-    test.only('TC-08 Logged-out users visit At Your Price form', async ({loginPage,swapPage, dashboardPage}) => {
+    test('TC-08 Logged-out users visit At Your Price form', async ({loginPage,swapPage, dashboardPage}) => {
         await loginPage.openHome();
         await dashboardPage.handleWelcomePopup();
         await dashboardPage.clickSwapMenu();
